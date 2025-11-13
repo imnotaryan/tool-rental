@@ -8,7 +8,7 @@ const Bookings = ({ user }) => {
   useEffect(() => {
     if (user?.username) {
       axios
-        .get(`http://localhost:5000/api/bookings/user/${user.username}`)
+        .get(`https://tool-rental.onrender.com/api/bookings/user/${user.username}`)
         .then((res) => {
           setBookings(res.data.bookings || []);
           setItems(res.data.itemList || []);

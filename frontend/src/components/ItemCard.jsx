@@ -12,7 +12,7 @@ const ItemCard = ({ item, onBook }) => {
     }
 
     try {
-      await axios.post("http://localhost:5000/api/bookings", {
+      await axios.post("https://tool-rental.onrender.com/api/bookings", {
         itemId: item._id,
         userId: user._id,
       });

@@ -7,7 +7,7 @@ export default function BookingForm({ item, onClose }) {
   const [endDate, setEndDate] = useState("");
 
   const handleBook = async () => {
-    await axios.post("http://localhost:5000/api/bookings", {
+    await axios.post("https://tool-rental.onrender.com/api/bookings", {
       itemId: item._id,
       userName,
       startDate,

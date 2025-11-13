@@ -11,7 +11,7 @@ function RegisterPage() {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/users/register', form);
+      const res = await axios.post('https://tool-rental.onrender.com/api/users/register', form);
       setMessage(res.data.message);
     } catch (err) {
       setMessage(err.response?.data?.message || 'Registration failed');

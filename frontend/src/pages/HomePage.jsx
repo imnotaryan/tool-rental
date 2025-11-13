@@ -9,7 +9,7 @@ export default function Home() {
   const user = JSON.parse(localStorage.getItem("user"));
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/items").then((res) => {
+    axios.get("https://tool-rental.onrender.com/api/items").then((res) => {
       setTools(res.data);
     });
   }, []);

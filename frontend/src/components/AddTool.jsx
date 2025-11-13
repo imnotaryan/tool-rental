@@ -12,7 +12,7 @@ export default function AddTool() {
       return;
     }
     try {
-      const res = await axios.post("http://localhost:5000/api/items", {
+      const res = await axios.post(`https://tool-rental.onrender.com/api/items`, {
         name,
         image,
         ratePerDay: rate,
