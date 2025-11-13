@@ -6,7 +6,7 @@ const userRoutes = require('./routes/userRoutes');
 const app = express();
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://tool-rental.onrender.com"],
+    origin: ["http://localhost:3000", "https://web-tool-rental.onrender.com"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
