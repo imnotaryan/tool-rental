@@ -10,6 +10,7 @@ export default function Home() {
 
   useEffect(() => {
     axios.get("https://tool-rental.onrender.com/api/items").then((res) => {
+      console.log(res.data)
       setTools(res.data);
     });
   }, []);
